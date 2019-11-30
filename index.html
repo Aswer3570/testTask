@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Название сайта</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!--Pop up-->
+	<div id="main_rates" onclick="popup(this)" id="close">
+    	<div id="window_rates" onclick="event.stopPropagation()">
+    		<div class="conf_container">
+    			<a class="close_link" onclick="popup(this)" id="close"></a>
+    			<p class="conf_title">Confirmation</p>
+    		</div>
+    		<div id="content"></div>
+    		<input type="submit" class="submit" value="Confirm and pay">
+    	</div>
+    </div>
+
+   	<!--Контейнер-->
+	<div class="container">
+		<div class="wrapper" onclick="popup(this)" id="mobile">
+			<div id="blockMobile">
+				<object type="image/svg+xml" data="img/device.svg" id="img"></object>
+				<p class="title">MOBILE</p>
+				<p class="description">Get notifications about new releases in our mobile app.</p>
+				<p class="price"><sup><small>$</small></sup>10<font class="price_month">/month</font></p>
+			</div>
+		</div>
+		<div class="wrapper" onclick="popup(this)" id="desktop">
+			<div id="blockDesktop">
+				<object type="image/svg+xml" data="img/laptop.svg" id="img"></object>
+				<p class="title">DESKTOP</p>
+				<p class="description">Enjoy new episodes on your laptop in browser with our web service, which supports all the platforms.</p>
+				<p class="price"><sup><small>$</small></sup>15<font class="price_month">/month</font></p>
+			</div>
+		</div>
+		<div class="wrapper" onclick="popup(this)" id="tv">
+			<div id="blockTv">
+				<object type="image/svg+xml" data="img/monitor.svg" id="img"></object>
+				<p class="title">TV</p>
+				<p class="description">Watch your favorite series at home on large screen with your TV application.</p>
+				<p class="price"><sup><small>$</small></sup>20<font class="price_month">/month</font></p>
+			</div>
+		</div>
+		<input type="submit" class="submit" value="Give feedback">
+	</div>
+	
+	<!--Скрипты-->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>
